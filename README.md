@@ -110,6 +110,10 @@ Sign in to confirm you're not a bot.
 
 Filenames are automatically sanitized before upload — any character outside `[a-zA-Z0-9_.]` (including spaces) is replaced with an underscore.
 
+### Large Files (>2.8GB)
+
+DMS has a 3GB per-file limit. Files over 2.8GB are automatically split into 2.8GB parts with 7-Zip and uploaded one at a time — you'll be prompted to press Enter before each part uploads, so you can download/verify each part on the DMS side before the next one starts.
+
 ---
 
 ## Mount DMS as a Local Drive
